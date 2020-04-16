@@ -84,6 +84,8 @@ public:
     const std::vector<SeedSpec6>& FixedSeeds() const { return vFixedSeeds; }
     const CCheckpointData& Checkpoints() const { return checkpointData; }
     const ChainTxData& TxData() const { return chainTxData; }
+    bool isProofOfAuthority() const { return consensus.isPOA; }
+
 protected:
     CChainParams() {}
 

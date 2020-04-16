@@ -86,6 +86,8 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000016f0d646b99b72f2c9");
         consensus.defaultAssumeValid = uint256S("0x0000000000254093079b1c68099a724100be0f903b7eadf6104d76e87d738c9e"); //477890
 
+        consensus.isPOA = true;
+
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -177,6 +179,8 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00000000000000b7ab6ce61eb6d571003fbe5fe892da4c9b740c49a07542462d"); // 1580000
 
+        consensus.isPOA = true;
+
         pchMessageStart[0] = 0x0b;
         pchMessageStart[1] = 0x11;
         pchMessageStart[2] = 0x09;
@@ -261,6 +265,8 @@ public:
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000005432f7303c09a63d50064c668292c02b25cfd30735e75bdbe701");
+
+        consensus.isPOA = true;
 
         pchMessageStart[0] = 0xfa;
         pchMessageStart[1] = 0xbf;
