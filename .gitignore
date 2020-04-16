@@ -1,13 +1,18 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
+src/gleecbtc
+src/gleecbtcd
+src/gleecbtc-cli
+src/gleecbtc-tx
+src/test/test_gleecbtc
+src/test/test_gleebtc_fuzzy
 src/qt/test/test_bitcoin-qt
+
+src/bench/bench_gleecbtc
+
+src/secp256k1/gen_context
+obj/
 
 # autoreconf
 Makefile.in
@@ -32,6 +37,8 @@ configure
 libtool
 src/config/bitcoin-config.h
 src/config/bitcoin-config.h.in
+src/config/gleebtc-config.h
+src/config/gleecbtc-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -59,6 +66,7 @@ src/qt/test/moc*.cpp
 *.a
 *.pb.cc
 *.pb.h
+*.user
 
 *.log
 *.trs
@@ -92,7 +100,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_gleecbtc.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -112,3 +120,5 @@ contrib/devtools/split-debug.sh
 .idea
 CMakeLists.txt
 
+*.user
+*.mk
